@@ -32,8 +32,8 @@ weatherForm.addEventListener('submit',(e)=>{
             message_1.textContent=data.err;
         else{
             message_1.textContent=data.location;
-            message_2.textContent+=data.data.temperature;
-
+            message_2.textContent=data.temperature+' '+data.wind_dir+' '+data.wind_speed;
+            
         }
     })
 })
